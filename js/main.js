@@ -7,16 +7,16 @@ for (let num = 1; num <= 100; num++) {
 
     
     if (num%3 == 0 && num%5 == 0) {
-        const square = `<div class="square">FizzBuzz</div>`;
+        const square = `<div class="square red">FizzBuzz</div>`;
         containerDom.innerHTML += square;
     } else if (num%5 == 0) {
-        const square = `<div class="square">Buzz</div>`;
+        const square = `<div class="square yellow">Buzz</div>`;
         containerDom.innerHTML += square;
     } else if (num%3 == 0) {
-        const square = `<div class="square">Fizz</div>`;
+        const square = `<div class="square green">Fizz</div>`;
         containerDom.innerHTML += square;
     } else {
-        const square = `<div class="square">${num}</div>`;
+        const square = `<div class="square blue">${num}</div>`;
         containerDom.innerHTML += square;
     }
 
