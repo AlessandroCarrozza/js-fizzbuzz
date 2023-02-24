@@ -5,17 +5,19 @@ const containerDom = document.getElementById("container");
 
 for (let num = 1; num <= 100; num++) {
 
-    const square = `<div class="square">testo</div>`;
-    containerDom.innerHTML += square;
     
     if (num%3 == 0 && num%5 == 0) {
-        console.log("fizzbuzz");
+        const square = `<div class="square">FizzBuzz</div>`;
+        containerDom.innerHTML += square;
     } else if (num%5 == 0) {
-        console.log("buzz");
+        const square = `<div class="square">Buzz</div>`;
+        containerDom.innerHTML += square;
     } else if (num%3 == 0) {
-        console.log("fizz");
+        const square = `<div class="square">Fizz</div>`;
+        containerDom.innerHTML += square;
     } else {
-        console.log(num);
+        const square = `<div class="square">${num}</div>`;
+        containerDom.innerHTML += square;
     }
 
 }
