@@ -6,3 +6,22 @@
     box-sizing: border-box;
 }
 
+ /* ------ codice ------ */
+
+ #container{
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+ }
+
+ .square{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 3px;
+ }
